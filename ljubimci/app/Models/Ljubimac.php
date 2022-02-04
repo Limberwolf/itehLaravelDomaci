@@ -10,7 +10,8 @@ class Ljubimac extends Model
 {
     use HasFactory;
 
-    public function vlasnik(){
-        return $his->belongsTo(Vlasnik::class);
+    public function vlasnik()
+    {
+        return $this->belongsTo(Vlasnik::class);
     }
 }

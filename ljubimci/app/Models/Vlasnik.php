@@ -11,12 +11,13 @@ class Vlasnik extends Model
 {
     use HasFactory;
 
-    public function grad(){
+    public function grad()
+    {
         return $this->belongsTo(Grad::class);
     }
 
-    public function ljubimac(){
+    public function ljubimci()
+    {
         return $this->hasMany(Ljubimac::class);
     }
-
 }

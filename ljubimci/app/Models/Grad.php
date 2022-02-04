@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Model\Vlasnik;
+use App\Models\Vlasnik;
 
 class Grad extends Model
 {
     use HasFactory;
-    
-    public function vlascnici(){
-    return $this->hasMany(Vlasnik::class);
-}
 
+    public function vlasnici()
+    {
+        return $this->hasMany(Vlasnik::class);
+    }
 }
